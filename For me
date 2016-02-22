@@ -1,0 +1,17 @@
+Run app on windows:
+set MYSQL_URL=mysql://root@localhost/med && DEBUG=1 &&  node index.js
+set DEBUG=med-mount && set PORT=9000 && node index.js
+
+Run tests:
+mocha --require babel-register
+
+
+1) Нужно ли парсить body в первой middlewire всегда
+2) Где ловить ошибки
+3) Как правильно отсылать токен клиенту
+4) Что делать , если неправильный пароль или логин, нужно ли делать return или вызывать next()
+5) Нужно ли на клиент присылать что-то кроме токена
+6) Когда нужно, а когда не нужно вызывать next(больше всего интересует "/login")
+
+
+1) Как обрабатывать ошибку с недоступностью базы
